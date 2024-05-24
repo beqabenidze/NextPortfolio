@@ -1,4 +1,6 @@
 import React from "react";
+import { FaLocationArrow } from "react-icons/fa6";
+import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
@@ -24,17 +26,27 @@ const HERO = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw]  md:max-w-2xl lg:max-w-[60vw] flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 ">
-            DYNAMIC WEB MAGIC
-          </h2>
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            Dynamic Web Magic with Next.js
+          </p>
+          <TextGenerateEffect
+            words="Transforming Concepts into Seamless User Experiences"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+          />
+
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          </p>
+
+          <a href="#about">
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
-      </div>
-      <div className="flex justify-center relative">
-        <TextGenerateEffect
-          className="text-center text-[40px] md:text-5xl lg:text-6xl flex justify-center relative"
-          words="Transforming concepts into seamless experiences "
-        />
       </div>
     </div>
   );
