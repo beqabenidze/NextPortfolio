@@ -11,7 +11,6 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-
   let wordsArray = words.split(" ");
 
   useEffect(() => {
@@ -20,7 +19,6 @@ export const TextGenerateEffect = ({
       {
         opacity: 1,
       },
-
       {
         duration: 2,
         delay: stagger(0.2),
