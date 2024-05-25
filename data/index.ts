@@ -1,10 +1,3 @@
-export const GridItems = [
-  { ttile: "Titl", description: "desc1", id: "1" },
-  { ttile: "Titl", description: "desc1", id: "1" },
-  { ttile: "Titl", description: "desc1", id: "1" },
-  { ttile: "Titl", description: "desc1", id: "1" },
-];
-
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
