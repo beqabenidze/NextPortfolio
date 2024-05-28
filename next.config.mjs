@@ -1,5 +1,4 @@
 import { withSentryConfig } from "@sentry/nextjs";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
@@ -36,7 +35,4 @@ export default withSentryConfig(nextConfig, {
   // https://docs.sentry.io/product/crons/
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true,
-
-  // Add the authToken property
-  authToken: process.env.SENTRY_AUTH_TOKEN,
 });
